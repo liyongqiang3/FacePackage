@@ -1,0 +1,29 @@
+{
+  "name": "FacePackage",
+  "version": "0.0.1",
+  "summary": "A short description of FacePackage.",
+  "description": "FacePackage  lizan \ncustom",
+  "homepage": "http://lian.github/FacePackage",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "lizan": "lian@extracted.com"
+  },
+  "source": {
+    "git": "http://lizan/github/FacePackage.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "FacePackage/Classes",
+    "FacePackage/Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}
