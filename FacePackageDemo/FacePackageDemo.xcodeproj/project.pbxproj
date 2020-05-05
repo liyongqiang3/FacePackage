@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9BB6F57CE763555F21954B9A /* libPods-FacePackageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3E159BB06E93289ADE531D /* libPods-FacePackageDemo.a */; };
+		D0742A452460556B00997F74 /* EmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0742A442460556B00997F74 /* EmojisList.plist */; };
+		D0742A482460564A00997F74 /* Emojis.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0742A462460564A00997F74 /* Emojis.bundle */; };
+		D0742A492460564A00997F74 /* EmojisImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0742A472460564A00997F74 /* EmojisImages.plist */; };
+		D0742A4C2460571700997F74 /* LZFaceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0742A4B2460571700997F74 /* LZFaceViewModel.m */; };
 		D076F027245ECECA003BE949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D076F026245ECECA003BE949 /* AppDelegate.m */; };
 		D076F02A245ECECA003BE949 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D076F029245ECECA003BE949 /* SceneDelegate.m */; };
 		D076F02D245ECECA003BE949 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D076F02C245ECECA003BE949 /* ViewController.m */; };
@@ -22,6 +26,11 @@
 		3D3E159BB06E93289ADE531D /* libPods-FacePackageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FacePackageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C6139272C72ADF9DF50250 /* Pods-FacePackageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePackageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacePackageDemo/Pods-FacePackageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6FE5DBFA47A7EC2180004C2D /* Pods-FacePackageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePackageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacePackageDemo/Pods-FacePackageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D0742A442460556B00997F74 /* EmojisList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmojisList.plist; sourceTree = "<group>"; };
+		D0742A462460564A00997F74 /* Emojis.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emojis.bundle; sourceTree = "<group>"; };
+		D0742A472460564A00997F74 /* EmojisImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmojisImages.plist; sourceTree = "<group>"; };
+		D0742A4A2460571700997F74 /* LZFaceViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZFaceViewModel.h; sourceTree = "<group>"; };
+		D0742A4B2460571700997F74 /* LZFaceViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZFaceViewModel.m; sourceTree = "<group>"; };
 		D076F022245ECECA003BE949 /* FacePackageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePackageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D076F025245ECECA003BE949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D076F026245ECECA003BE949 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +76,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D0742A432460555C00997F74 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0742A462460564A00997F74 /* Emojis.bundle */,
+				D0742A472460564A00997F74 /* EmojisImages.plist */,
+				D0742A442460556B00997F74 /* EmojisList.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		D076F019245ECECA003BE949 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +107,7 @@
 		D076F024245ECECA003BE949 /* FacePackageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0742A432460555C00997F74 /* Resource */,
 				D076F043245ED1A2003BE949 /* ViewContoller */,
 				D076F025245ECECA003BE949 /* AppDelegate.h */,
 				D076F026245ECECA003BE949 /* AppDelegate.m */,
@@ -109,6 +129,8 @@
 			children = (
 				D076F044245ED1A2003BE949 /* LZFaceViewController.h */,
 				D076F045245ED1A2003BE949 /* LZFaceViewController.m */,
+				D0742A4A2460571700997F74 /* LZFaceViewModel.h */,
+				D0742A4B2460571700997F74 /* LZFaceViewModel.m */,
 			);
 			path = ViewContoller;
 			sourceTree = "<group>";
@@ -173,6 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D076F035245ECECB003BE949 /* LaunchScreen.storyboard in Resources */,
+				D0742A482460564A00997F74 /* Emojis.bundle in Resources */,
+				D0742A452460556B00997F74 /* EmojisList.plist in Resources */,
+				D0742A492460564A00997F74 /* EmojisImages.plist in Resources */,
 				D076F032245ECECB003BE949 /* Assets.xcassets in Resources */,
 				D076F030245ECECA003BE949 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D076F02D245ECECA003BE949 /* ViewController.m in Sources */,
+				D0742A4C2460571700997F74 /* LZFaceViewModel.m in Sources */,
 				D076F027245ECECA003BE949 /* AppDelegate.m in Sources */,
 				D076F046245ED1A2003BE949 /* LZFaceViewController.m in Sources */,
 				D076F038245ECECB003BE949 /* main.m in Sources */,
